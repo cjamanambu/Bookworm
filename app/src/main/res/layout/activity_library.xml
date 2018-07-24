@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Presentation.LibraryActivity">
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/library_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="24dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="spacingWidthUniform"
+        android:gravity="center">
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/library_visitor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/anonymous_account_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anonymous_account" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visitor_login_prompt"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please go to Account page to login"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/library_navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="?android:attr/windowBackground"-->
+        <!--app:menu="@menu/navigation" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/library_library"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/title_library"/>
+        <Button
+            android:id="@+id/library_discover"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/title_discover"/>
+        <Button
+            android:id="@+id/library_account"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="@string/title_account"/>
+    </LinearLayout>
+
+</RelativeLayout>

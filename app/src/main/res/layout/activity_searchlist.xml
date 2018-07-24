@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookList_search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignBottom="@+id/home_page_navigation"
+    android:layout_marginBottom="50dp"
+    android:layout_marginTop="44dp">
+
+</ListView>

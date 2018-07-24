@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comp3350.bookworm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Presentation.HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".Presentation.LoginActivity" />
+        <activity android:name=".Presentation.SignupActivity" />
+        <activity android:name=".Presentation.AccountActivity" />
+        <activity
+            android:name=".Presentation.DescriptionActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Presentation.BookPreviewActivity" />
+        <activity android:name=".Presentation.OrderHistoryActivity" />
+        <activity android:name=".Presentation.PlaceOrderActivity" />
+        <activity android:name=".Presentation.LibraryActivity" />
+        <activity android:name=".Presentation.ModifyAddressActivity" />
+        <activity android:name=".Presentation.ShoppingCartActivity" />
+        <activity android:name=".Presentation.EditProfieActivity" />
+        <activity android:name=".Presentation.CreditCardPaymentActivity" />
+        <activity android:name=".Presentation.WishlistActivity" />
+    </application>
+
+</manifest>
